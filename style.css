@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif
+}
+.wheatherWrap{
+    position: relative;
+}
+.bg {
+    background: url('./img/taylor-durrer-114005.jpg');
+    position: fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+}
+.bgBlur {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-filter: blur(15px);
+    -moz-filter: blur(15px);
+    -o-filter: blur(15px);
+    -ms-filter: blur(15px);
+    filter: blur(20px);
+}
+.contentWrap {
+    position:absolute;
+    top: 30px;
+    left: 50%;
+    transform:translate(-50%,0);
+    width: 900px;
+    height: 560px;
+    border-radius: 5px;
+    background: rgba(255,255,255,0.3);
+}
+.contentTop{
+    height: 400px;
+    background: url('./img/taylor-durrer-114005.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px 5px 0 0;
+}
+.inputWrap input{
+    position: absolute;
+    left: 116px;
+    top: 46px;
+    width: 200px;
+    padding: 15px;
+    font-size: 28px;
+    color: white;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+.text1::-webkit-input-placeholder{
+    color: #87B4C7;
+}
+.position{
+    float: right;
+    margin-top: 50px;
+    margin-right: 60px;
+    color: white;
+    text-align: right;
+}
+.cityTime{
+    margin-top: 10px;
+}
+.updateLocationsWrap{
+    padding: 10px 40px 10px 18px;
+    position:absolute;
+    right: 0;
+    bottom: 280px;
+    background-color: #77CA5F;
+    font-size: 10px;
+    color: white;
+}
+.updateLocationsWrap span{
+    position: absolute;
+    left: -18px;
+    top: 0;
+    display: inline-block;
+    height: 34px;
+    width: 34px;
+    background-color: #77CA5F;
+    border-radius: 50%;
+}
+.contentBottom{
+    color: white;
+}
+.todayWheather{
+    float: left;
+    margin-left: 50px;
+}
+.todaytemperature{
+    height: 110px;
+}
+.todaytemperature div{
+    display: inline-block;
+    height: 110px;
+    line-height: 110px;
+    vertical-align: top;
+    text-align: center;
+}
+.todaytemperature div .number{
+    font-size: 80px;
+}
+.todaytemperature img{
+    width: 110px;
+}
+.todayWheather  .today{
+    font-size: 13px;
+}
+.todayWheather .calendar{
+    display: inline-block;
+    padding: 5px 10px;
+    margin-right: 20px;
+    background: rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+.todayWheather  .airQuality i{
+    display: inline-block;
+    margin: 0 12px;
+}
+
+.afterWheather{
+    float: right;
+}
+.afterWheather img{
+    width: 40px;
+    margin: 8px 0;
+}
+.afterWheather li{
+    float: left;
+    padding: 18px 0;
+    border-left: 1px solid #8C8D8F;
+}
+.afterWheather li div{
+    padding: 0 16px;
+}
+.afterWheather .week span{
+    display: inline-block;
+    padding: 3px 8px;
+    background: rgba(0,0,0,0.2);
+    border-radius: 8px;
+    font-size: 9px;
+}
+
+/*定位图标*/
+@font-face {
+    font-family: 'iconfont';
+    src: url('./img/iconfont.eot');
+    src: url('./img/iconfont.eot?#iefix') format('embedded-opentype'),
+    url('./img/iconfont.woff') format('woff'),
+    url('./img/iconfont.ttf') format('truetype'),
+    url('./img/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-size:36px;
+    font-style:normal;
+    font-weight: bold;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
